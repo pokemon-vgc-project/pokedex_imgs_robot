@@ -146,6 +146,7 @@ class PokemonModel:
         if self.forme in self.formeDic:
             if self.num == 898 and self.forme == "Ice": return "-i"
             elif self.num == 25 and self.forme == "Alola": return "-alola"
+            elif self.num == 801 and self.forme == "Original": return "-o"
             return "-"+self.formeDic[self.forme]
         return ""
     
