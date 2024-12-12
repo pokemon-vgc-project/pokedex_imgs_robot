@@ -15,8 +15,8 @@ config = {
     "database": os.getenv('DATABASE_NAME'),
 }
 
-pokemon_image_host = "https://www.serebii.net/pokemon/art"
-image_dir_path = "./downloads"
+pokemon_image_host = os.getenv('POKEMON_IMAGE_HOST')
+image_dir_path = os.getenv('IMAGE_DIR_PATH')
 
 if __name__ == "__main__":
     connector = database.connect_to_mysql(config)
